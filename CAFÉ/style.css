@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+:root{
+    --colorbrown:  rgb(48, 29, 29);
+    --colorlightbrown: rgb(238, 224, 219);
+    --page-spacing: 0 50px;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: var(--colorbrown);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* padding-right: 50px; */
+}
+
+header ul{
+    margin-right: 50px;
+    display: flex;
+    gap: 15px;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a, footer ul li a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header ul li a:visited, footer ul li a:visited {
+    color: white;
+}
+
+header ul li a:link, footer ul li a:link {
+    color: white;
+}
+
+.banner-image{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 300px;
+    background-color: rgb(49, 35, 35);
+}
+
+.banner-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transform: rotate(180deg);
+}
+
+.title{
+    color: var(--colorbrown) ;
+    background-color: var(--colorlightbrown);
+    padding: var(--page-spacing);
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.title h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.title h3{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.title h3:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.catalog{
+    padding: var(--page-spacing);
+    color: var(--colorbrown);
+    padding-block: 20px;
+}
+
+.catalog > * {
+    margin-bottom: 20px;
+}
+
+.catalog h2{
+    font-size: 40px;
+}
+
+.catalog h3{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.products-container{
+    display: flex;
+    justify-content: space-between;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 430px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.product:hover{
+    transform: scale(1.05);
+}
+
+
+.product img{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.item1 img {
+    object-position: -155px;
+}
+
+.item2 img {
+    object-position: -105px;
+}
+
+.item3 img {
+    object-position: -90px;
+}
+
+.item4 img {
+    object-position: -152px;
+}
+
+.info-item{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 30px;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.info-item span:first-child{
+    font-weight: 600;
+}
+
+.info-item span{
+    font-size: 22px;
+}
+
+.login {
+    background-color: var(--colorlightbrown);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.login-container{
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.13);
+}
+
+.login h1{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 40px;
+    color: var(--colorbrown);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 70px;
+    font-size: 22px;
+    gap: 8px;
+}
+
+form input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.buttons-container input{
+    width: 150px;
+    border: 0;
+    font-weight: 500;
+    font-size: 19px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+}
+
+.buttons-container input:hover{
+    background-color: rgb(78, 48, 48);
+}
+
+.cancel-btn{
+    background-color: var(--colorbrown);
+    color: white;
+}
+
+.login-btn{
+    background-color: var(--colorbrown);
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colorbrown);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    height: 80px;
+    padding-inline: 50px;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    font-weight: 400;
+}
