@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copiloto</title>
+</head>
+<body>
+    <script>
+        var estado = prompt("Insira a sgila de seu estado:")
+        switch(estado){
+            case "RJ":
+            case "rj":
+            case "rJ":
+            case "Rj":
+                alert("Carioca");
+                break;
+            case "SP":
+            case "sp":
+            case "sP":
+            case "Sp":
+                alert("Paulista");
+                break;
+            case "MG":
+            case "mg":
+            case "mG":
+            case "Mg":
+                alert("Mineiro");
+                break;
+            default:
+                alert("Outros Estados")
+        }
+    </script>
+</body>
+</html>

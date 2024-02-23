@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var preco = parseFloat(prompt("Insira o preço do produto:"))
+        var pagamento = prompt("Insira o método de pagamento\nMétodos disponíveis: pix, boleto, cartao")
+        if (pagamento == "pix"){
+            alert(`Com pagamento via PIX, o produto de R$ ${preco} ficará por R$ ${preco - (preco * 0.15)}`)
+        }else if (pagamento == "boleto"){
+            alert(`Com pagamento via boleto, o produto de R$ ${preco} ficará por R$ ${preco - (preco * 0.1)}`)
+        }else if (pagamento == "cartao" || pagamento == "cartão"){
+            alert(`Com pagamento via cartao, o produto de R$ ${preco} ficará por R$ ${preco - (preco * 0.05)}`)
+        }else{
+            alert("Insira o nome do método de pagamento conforme foi pedido")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var valor = parseFloat(prompt("Digite o valor"))
+    var taxa = parseFloat(prompt("Digite o valor da taxa"))
+    var tempo = parseFloat(prompt("Digite o tempo corrido"))
+
+    alert("O valor da sua prestação em atraso é: " + (valor + ((valor*(taxa/100))*tempo)))
+    document.write(`O valor da sua prestação em atraso é ${valor + ((valor * (taxa/100)) * tempo)}`)
+    </script>
+    
+</body>
+</html>
+<!-- 1) Efetuar o cálculo e a apresentação do valor de u
+ma prestação em atraso, utilizando a fórmula: PRESTAÇÃO = VALOR + (VALOR * (TAXA/100) * TEMPO). -->

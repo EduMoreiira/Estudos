@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 0
+        var mem = 0
+        var maior = 0
+        var i = 0
+        while(i < 5){
+            num = parseFloat(prompt(`Insira uma sequência de 5 números\nN[${i}]`));
+            mem += num
+            if(num > maior){
+                maior = num
+            }
+            document.write(num+"<br>")
+            i++
+        }
+        document.write(`A média dos números é ${(mem / i).toFixed(2)}.<br>`)
+        document.write(`o maior número inserido foi ${maior}.`)
+    </script>
+</body>
+</html>

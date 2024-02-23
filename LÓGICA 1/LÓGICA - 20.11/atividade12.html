@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var saldo = 100
+        for(let menu = "default"; menu != "sair";){
+            menu = prompt("Escolha uma opção\nsacar\ndepositar\nsaldo\nsair")
+            if(menu == "sacar"){
+                let saque = parseFloat(prompt("Insira o valor do saque"))
+                if(saque > 0){
+                    saldo -= saque
+                }
+                if(saque < 0){
+                    alert("Saque inválido, insira um valor positivo")
+                }else if(saldo < 0){
+                    saldo += saque
+                    alert(`Você não possui saldo suficiente, seu saldo atual é de R$${saldo}`)
+                }else{
+                    alert(`Você sacou R$${saque} do seu saldo de R$${saldo + saque}, seu saldo atual é R$${saldo}`)
+                }
+            }else if(menu == "depositar"){
+                let deposito = parseFloat(prompt("Insira o valor do saque"))
+                if(deposito > 0){
+                    saldo += deposito
+                }
+                if(deposito < 0){
+                    alert("Depósito inválido, insira um valor positivo")
+                }else{
+                    alert(`Você depositou o valor de R$${deposito} no seu saldo anterior de R$${saldo - deposito}, seu saldo atual é R$${saldo}`)
+                }
+            }else if(menu == "saldo"){
+                alert(`Seu saldo atual é de R$${saldo}`)
+            }
+        }
+    </script>
+</body>
+</html>

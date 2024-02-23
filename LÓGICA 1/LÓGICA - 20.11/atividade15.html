@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mem = parseFloat(0)
+        let num = parseFloat(0)
+        for(var i = -1;isNaN(num) == false; i++){
+            num = parseFloat(prompt(`Num [${i+2}]\nDigite um número:\nPara finalizar o cálculo, digite uma letra!`))
+            if(isNaN(num) == false){
+                mem += num
+            }
+            if(isNaN(num) == false){
+                document.write(`${num}<br>`)
+            }
+        }
+        document.write(`A média dos numeros inseridos é: ${(mem / i).toFixed(2)}`)
+    </script>
+</body>
+</html>

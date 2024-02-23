@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(;isNaN(n1);){
+            var n1 = parseFloat(prompt("Insira o primeiro valor\nOBS: O valor deve ser um número"));
+        }
+        for(;isNaN(n2);){
+            var n2 = parseFloat(prompt("Insira o segundo valor\nOBS: O valor deve ser um número"));
+        }
+        if (n1 > n2){
+            alert(`${n1} é maior que ${n2}`);
+        }else{
+            alert(`${n1} não é maior que ${n2}`);
+        }
+        if(n1 > n2){
+            document.write(n1)
+        }else{
+            document.write(n2)
+        }
+
+    </script>
+</body>
+</html>

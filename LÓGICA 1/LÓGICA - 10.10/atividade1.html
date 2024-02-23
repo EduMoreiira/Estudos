@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copiloto</title>
+</head>
+<body>
+   <script>
+    var estadocivil = prompt("Insira seu estado civil:\n Opções disponíveis: Solteiro, Casado, Viúvo, Divorciado")
+    switch(estadocivil.substring(0,1)){
+        case  "S":
+        case  "s":
+            alert("Seu estado civil é Solteiro");
+            break;
+        case "C":
+        case "c":
+            alert("Seu estado civil é Casado");
+            break;
+        case "V":
+        case "v":
+            alert("Seu estado civil é Viúvo");
+            break;
+        case "D":
+        case "d":
+            alert("Seu estado civil é Divorciado");
+            break;
+        default:
+            alert("Nao foi possivel registrar seu estado civil")
+    }
+    document.write(estadocivil.substring(0,1))
+   </script> 
+</body>
+</html>

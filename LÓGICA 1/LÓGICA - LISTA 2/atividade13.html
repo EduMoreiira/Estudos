@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    var limite = parseInt(prompt("Insira até qual numeral deseja imprimir"))
+    var incremento = parseInt(prompt("Insira o incremento"))
+    var mem = parseInt(0 - incremento)
+
+    for(;mem <= limite;){
+        mem += incremento
+        if(mem <= limite){
+        document.write(mem+"<br>")
+        }
+        }  
+  </script>  
+</body>
+</html>

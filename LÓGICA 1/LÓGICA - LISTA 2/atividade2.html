@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var abastecer = parseInt(prompt("Quantos litros deseja abastecer?"));
+        if(abastecer < 0){
+            alert("Insira um valor positivo")
+        }else{
+            alert(`Você abasteceu ${abastecer} litros, totalizando em R$${abastecer * 5.20}`)
+        }
+        document.write(`Seu veículo tem a capacidade de andar ${abastecer * 12} kilometros.`)
+    </script>
+</body>
+</html>

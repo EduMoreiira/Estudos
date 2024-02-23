@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mem = 0
+        var qtd = parseInt(prompt("Insira até qual número"))
+        for(let num = 2; num <= qtd; num++){
+            for(let divisor = 1; divisor <= num ; divisor++){
+                if(num % divisor == 0){
+                    mem +=1
+                }
+            }
+            if(mem < 3){
+                document.write(`${num} é primo<br>`)
+            }else{
+                document.write(`${num}<br>`)
+            }
+            divisor = 0
+            mem = 0
+        }
+    </script>
+</body>
+</html>

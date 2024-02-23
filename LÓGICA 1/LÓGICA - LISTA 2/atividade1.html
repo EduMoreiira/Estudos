@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tempo = parseFloat(prompt("Insira o tempo gasto na viagem"))
+        var velocidade = parseFloat(prompt("Insira a velocidade"))
+        var distancia = tempo * velocidade
+        var combustivel = distancia / 12
+        var velmedia = (distancia / tempo)
+        document.write(`Velocidade media: ${velmedia} <br>Tempo gasto: ${tempo} <br>Distancia percorrida: ${distancia} <br>Litros usados: ${combustivel}`)
+    </script>
+</body>
+</html>

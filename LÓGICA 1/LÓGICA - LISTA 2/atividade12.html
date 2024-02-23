@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mNome = []
+        var mIdade = []
+        var mSexo = []
+
+        for(var i = 0; i < 3; i++){
+            let nome = prompt(`Pessoa nº [${i+1}]\nInsira seu nome`);
+            let idade = parseInt(prompt(`Pessoa nº [${i+1}]\nInsira sua idade`));
+            let sexo = prompt(`Pessoa nº [${i+1}]\nInsira seu sexo\nM ou F`);
+            mNome.push(nome)
+            mIdade.push(idade)
+            mSexo.push(sexo)
+            //document.write(`Nome: ${mNome[i]}, idade: ${mIdade[i]}, Sexo: ${mSexo[i]}<br>`)
+             if(mSexo[i] == "M" && mIdade[i] > 21){
+                 document.write(`Nome: ${mNome[i]}, Idade: ${mIdade[i]}, Sexo: ${mSexo[i]}<br>`)
+            }
+        }
+    </script>
+</body>
+</html>

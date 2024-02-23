@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PesoProva</title>
+</head>
+<body>
+    <script>
+        for(;isNaN(prova1);)
+        var prova1 = parseFloat(prompt("Insira a nota da primeira prova"));
+        for(;isNaN(prova2);)
+        var prova2 = parseFloat(prompt("Insira a nota da segunda prova"));
+        for(;isNaN(prova3);)
+        var prova3 = parseFloat(prompt("Insira a nota da terceira prova"));
+
+        
+        const peso1 = 2
+        const peso2 = 3
+        const peso3 = 5
+        var media = ((prova1 * peso1) + (prova2 * peso2) + (prova3 * peso3)) / (peso1 + peso2 + peso3)
+
+    if (media>=7){ 
+        document.write("Você foi aprovado com a média: "+media);
+    }else{
+        document.write("Você foi reprovado com a média: " +media);
+    }
+    </script>
+</body>
+</html>
+ <!-- A primeira prova tem peso 2, a segunda tem peso 3 e a terceira tem peso 5. -->

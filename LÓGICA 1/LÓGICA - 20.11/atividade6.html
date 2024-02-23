@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var qtd = 0
+        var memoria = 0
+        var num = parseInt(prompt("Insira um valor:"));
+        while(num != -1){
+            qtd++
+            memoria += num
+            document.write(memoria +"<br>")
+            num = parseInt(prompt("Insira outro valor:"));
+        }
+        document.write(memoria)
+        document.write(`a média de tudo deu ${(memoria / qtd).toFixed(2)}`)
+    </script>
+</body>
+</html>

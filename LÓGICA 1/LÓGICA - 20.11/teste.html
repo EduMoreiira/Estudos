@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 1
+        var divisor = 1
+        var primo = false 
+        while(num <= 10){
+            while(divisor < num){
+                if(num % divisor == 0 && num / 1 != 0){
+                    document.write(`${num} dividido por ${divisor} é 0<br>`)
+                    primo = false
+                    break
+                }else{
+                    primo = true
+                    document.write(`${num} dividido por ${divisor} NÃO é 0<br>`)
+                }
+                divisor++
+            }
+            if(primo === false){
+                document.write(`${num}<br>`)
+            }else{
+                document.write(`${num} é primo<br>`)
+                }
+            primo = false
+            divisor = 2
+            num++
+        }
+    </script>
+</body>
+</html>

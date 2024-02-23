@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var raio = parseFloat(prompt("Insira o valor do raio da circuferência"));
+        for(;isNaN(raio);) {
+            var raio = parseFloat(prompt("Insira o valor do raio da circuferência\nSomente números serão aceitos!"));
+        }
+        var area = 3.14159 * (raio * raio);
+        document.write("O valor da área de "+raio+" é: "+area.toFixed(2));
+    </script>
+    
+</body>
+</html>

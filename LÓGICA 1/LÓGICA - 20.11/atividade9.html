@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 0
+        var mem = 0
+        var i = 0
+        while(num >= 0){
+            num = parseInt(prompt("insira um numero"));
+            mem = mem + num
+            i++
+            document.write(`${num}<br>`)
+        }
+        document.write(mem)
+        document.write("a média dos numeros é " + mem / i)
+    </script>
+</body>
+</html>

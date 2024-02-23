@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversor celsius-fahrenheit</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var celsius = parseFloat(prompt("Valor em gráus Celsius para Fahrenheit:"));
+        for (;isNaN(celsius);) {
+            var celsius = parseFloat(prompt("Valor em gráus Celsius para Fahrenheit:\nAtenção: Insira um valor valido (número)"));    
+        }
+        
+        var fahrenheit = parseFloat(prompt("Valor em gráus Fahrenheit para Celsius:"));
+        for (;isNaN(fahrenheit);) {
+            var fahrenheit = parseFloat(prompt("Valor em gráus Fahrenheit para Celsius:\nAtenção: Insira um valor valido (número)"));    
+        }
+        document.write(celsius+" Gráus Celsius são: "+(9 * celsius + 160) / 5+ " Gráus Fahrenheit<br><br>");
+        document.write(fahrenheit+" Gráus Fahrenheit são: "+(fahrenheit - 32) * ( 5 / 9)+ " Gráus Celsius");
+
+        
+    </script>
+</body>
+</html>

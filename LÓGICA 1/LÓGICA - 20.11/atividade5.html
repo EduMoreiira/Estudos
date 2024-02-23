@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i = 2
+        var num = 2
+        var classificacao = ""
+        while (i <= 1000){
+            while(num < i){
+                if(i % num == 0){
+                    classificacao = "não é primo"
+                    break
+                }
+                num++
+            }
+            if(classificacao == ""){
+                document.write(`${i} ${classificacao}<br>`)
+                }
+            classificacao = ""
+            num = 2
+            i++
+            }
+    </script>
+</body>
+</html>

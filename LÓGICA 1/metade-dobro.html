@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var n = parseFloat(prompt("Insira algum número"));
+        for (;isNaN(n);) {
+            var n = parseFloat(prompt("Insira algum número\n(Somente números serão aceitos!)"));
+        }
+
+        document.write("A metade de "+ n +" é: "+ n / 2);
+        document.write("<br>O dobro de "+ n +" é: "+ n * 2);
+        </script>
+    
+</body>
+</html>
