@@ -4,6 +4,7 @@ public class Exercicio7 {
         Scanner input = new Scanner(System.in);
         int candidato1 = 0, candidato2 = 0, candidato3 = 0, candidato4 = 0, nulo = 0, branco = 0;
         
+        //loop breaks when users input is equal to 0
         for(;;){
             System.out.println("Insira um digito para confirmar seu voto:");
             System.out.println("1 -> para votar no Candidato 1");
