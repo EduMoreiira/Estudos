@@ -9,13 +9,13 @@ public class Exercicio5 {
             for(int index = 0; index < vocals.length; index++){
                 if(str.charAt(i) == vocals[index]){
                     vocalCounter++;
-                    modified.replace(str.charAt(i), character);
+                    modified = modified.replace(str.charAt(i), character);
                 }
             }
         }
 
         System.out.println("A palavra [" + str + "] contém " + vocalCounter + " vogais.");
-        System.out.println("A palavra [" + str + " modificada com o caráctere [" + character + "] ficou: [" + modified + "]");
+        System.out.println("A palavra [" + str + "] modificada com o caráctere [" + character + "] ficou: [" + modified + "]");
     }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
