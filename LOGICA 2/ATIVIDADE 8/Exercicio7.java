@@ -25,6 +25,27 @@ public class Exercicio7 {
         //e) if ends with "RIO"
         boolean endsWithRio = uppercaseStr.endsWith("RIO");
 
+        //f) first 9 characters
+        String f9CharStr;
+        if(strLength >= 9) {
+            f9CharStr = str.substring(0, 9);
+        }else {
+            f9CharStr = "[Erro] String inserida possue menos que 9 caracteres";
+        }
+
+        //e) check if str is a palindrome
+        String reverseStr = "";
+        for(int i = strLength - 1; i >= 0; i--){
+            reverseStr += uppercaseStr.charAt(i);
+        }
+
+        boolean isPalindrome;
+        if(reverseStr.equals(uppercaseStr)){
+            isPalindrome = true;
+        }else{
+            isPalindrome = false;
+        }
+
         //outputs
         System.out.println("A string inserida contém " + strLength + " caracteres");
         System.out.println("A string inserida em maiúsculo: " + uppercaseStr);
@@ -40,6 +61,15 @@ public class Exercicio7 {
         }else{
             System.out.println("A string inserida não termina com \"RIO\"");
         }
+
+        System.out.println("Os primeiros 9 caracteres da string inserida são: " + f9CharStr);
+
+        if(isPalindrome){
+            System.out.println("A string inserida é um palíndromo");
+        }else{
+            System.out.println("A string inserida não é um palíndromo");
+        }
+
     }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
