@@ -4,10 +4,15 @@ import java.util.Scanner;
 public class Exercicio3 {
 
     static void sumAndProduct(ArrayList<Integer> arr){
-        int product = 1;
+        int product = 0;
         int sum = 0;
+        
         for(int i = 0; i < arr.size(); i++){
+
             if(arr.get(i) % 2 != 0){
+                if(product == 0) {
+                    product = 1;
+                }
                 product *= arr.get(i);
             }else{
                 sum += arr.get(i);
