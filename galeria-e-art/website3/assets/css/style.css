@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+:root{
+    --color-black: #191919;
+    --color-blue: #242040;
+    --color-magenta: #ec3281;
+}
+
+.container{
+    border: 2px solid blue;
+    padding-inline: 150px;
+}
+/* =================BANNER=========== */
+.container-banner{
+    width: 100%;
+    height: 160px;
+    background-color: rgb(49, 50, 65);
+    position: relative;
+}
+
+.container-banner  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.text-banner{
+    text-align: center;
+    text-wrap: nowrap;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #f1f1f1;
+    letter-spacing: 20px;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.text-banner h1{
+    font-weight: 100;
+}
+
+.text-banner .bold-banner{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+/* =================BANNER end=========== */
+
+
+/* =================NAVBAR=========== */
+header{
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 60px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-bottom: 2px solid #dfdfdf;
+}
+
+.logo{
+    width: 190px;
+    display: block;
+}
+
+.img-container{
+    position: relative;
+}
+
+.lines{
+    width: 200px;
+    display: block;
+    position: absolute;
+}
+
+.line1{
+    background-color: var(--color-blue);
+    height: 3px;
+    bottom: 0;
+    right: 107%;
+}
+
+.line2{
+    background-color: var(--color-magenta);
+    height: 2px;
+    bottom: -10px;
+    right: 79.2%;
+}
+
+nav{
+    /* border: 2px solid red; */
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 22px;
+    color: var(--color-black);
+}
+
+nav ul li .search-bar{
+    height: 32px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding-inline: 15px;
+    border-radius: 6px;
+    width: 180px;
+    background-image: url("../images/lupa.png");
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-position: 90% center;
+}
+
+nav ul li .search-bar::placeholder{
+    color: #b6b6b6;
+}
+
+
+/* =================NAVBAR end=========== */
+
+/* =================HIGHLIGHT=============== */
+.highlight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight h1{
+    font-size: 45px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: var(--color-black);
+    letter-spacing: 8px;
+}
+
+.highlight-pictures{
+    width: 100%;
+    height: 365px;
+    border: 2px solid blue;
+    box-shadow: inset 0px -130px 80px -70px rgb(0 0 0 / 50%);
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 18% 17% 30% 17% 18%;
+}
+
+.pictures{
+    border: 2px solid red;
+    display: flex;
+    align-items: end;
+}
+
+.pictures img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.title{
+    border: 2px solid green;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    position: absolute;
+}
+
+.title span{
+    display: block;
+    color: white;
+}
+
+.title .art-name{
+    font-size: 22.5px;
+    font-weight: 400;
+}
+
+.title .artist-name{
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* =================HIGHLIGHT end=============== */
