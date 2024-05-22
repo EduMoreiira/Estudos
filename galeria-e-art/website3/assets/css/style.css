@@ -21,7 +21,7 @@ a{
 }
 
 .container{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding-inline: 150px;
 }
 /* =================BANNER=========== */
@@ -218,4 +218,74 @@ nav ul li .search-bar::placeholder{
     cursor: pointer;
 }
 
+.nft{
+    height: 100svh;
+    background-color: var(--color-blue);
+}
+
+
 /* =================HIGHLIGHT end=============== */
+
+/* =================GALLERY=============== */
+
+.gallery{
+    padding-block: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery .gallery-title{
+    font-weight: 100;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.gallery .gallery-title .subterranea{
+    position: relative;
+    border: 2px solid green;
+    background: linear-gradient(to top, var(--color-black) 50%, white 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gallery .gallery-title .subterranea::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "‎";
+    background-color: var(--color-magenta);
+    display: block;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+}
+
+.gallery .mosaic{
+    border: 2px solid blue;
+    width: 100%;
+    height: 540px;
+    display: grid;
+    gap: 2px;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+
+    grid-template-areas: 
+    'a a b c d d'
+    'e f h h d d'
+    'e g h h i i';
+}
+
+.red{
+    background-color: red;
+    grid-area: d;
+}
+
+.pic1{
+    grid-area: h;
+    background-size: cover;
+    background-image: url("../images/imagens/pagina\ 3\ galeria/galeria1.png");
+}
+
+/* =================GALLERY end=============== */
